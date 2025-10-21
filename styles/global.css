@@ -1,12 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
 :root {
-  --font-family:'Poppins', sans-serif;
+  --font-family: 'Poppins', 'sans-serif';
   --text: 400 1rem/1.5 var(--font-family);
   --text-sm: 400 0.875rem/1.4 var(--font-family);
 
@@ -20,16 +19,15 @@
   --surface-disabled: #E7E5E4;
 
   --stroke-default: #D6D3D1;
-  --stroke-hightlight: #F3541C;
+  --stroke-highlight: #F3541C;
   --semantic-error: #DC2626;
-  
-  }
+}
 
-
-body{
+body {
   overflow: hidden;
+
   font: var(--text);
-  color: var(--text-secondary)
+  color: var(--text-secondary);
 }
 
 h1, h2 {
@@ -43,7 +41,6 @@ img {
 
 .flex {
   display: flex;
-  gap: 3rem; /* espaço entre os campos */
 }
 
 .flex-1 {
@@ -52,13 +49,4 @@ img {
 
 .flex-2 {
   flex: 2;
-}
-
-.input-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-.input-wrapper:has([disabled]) {
-opacity: .5;
 }

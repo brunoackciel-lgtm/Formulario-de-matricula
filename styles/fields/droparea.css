@@ -1,5 +1,6 @@
 .dropzone {
-  border: 1px dashed var(--stroke-default);
+  border: 2px dashed transparent;
+  outline: 1px dashed var(--stroke-default);
   border-radius: .25rem;
 
   display: grid;
@@ -8,6 +9,7 @@
 
   text-align: center;
   padding: 1.75rem 1rem;
+
   position: relative;
 
   & input {
@@ -22,16 +24,17 @@
     color: #A8A29E;
   }
 
-  &:hover, &:has(input:focus){
-    border-width: 2px;
-    border-color: var(--stroke-hightlight);
+  &:hover, &:has(input:focus) {
+    outline-width: 0;
+    border-color: var(--stroke-highlight);
     background-color: var(--surface-secondary);
 
     & p {
-      color: var(--text-tertiary)
+      color: var(--text-tertiary);
     }
+
     & svg path {
-      stroke: var(--stroke-hightlight);
+      stroke: var(--stroke-highlight);
     }
   }
 }
